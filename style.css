@@ -1,0 +1,20 @@
+  html {
+    --negative-space: 20px;
+    --min-video-size: 320px;
+  }
+  
+  body {
+    padding: 0 var(--negative-space);
+    text-align: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--min-video-size), 1fr));
+    grid-gap: var(--negative-space);
+  }
+
+  video {
+    border: 2px solid gray;
+    width: 100%;
+  }
